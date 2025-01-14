@@ -4874,16 +4874,20 @@ type PullRequestReviewPayload struct {
 type PullRequestReviewCommentPayload struct {
 	Action  string `json:"action"`
 	Comment struct {
-		URL              string `json:"url"`
-		ID               int64  `json:"id"`
-		NodeID           string `json:"node_id"`
-		DiffHunk         string `json:"diff_hunk"`
-		Path             string `json:"path"`
-		Position         int64  `json:"position"`
-		OriginalPosition int64  `json:"original_position"`
-		CommitID         string `json:"commit_id"`
-		OriginalCommitID string `json:"original_commit_id"`
-		User             struct {
+		URL               string `json:"url"`
+		ID                int64  `json:"id"`
+		NodeID            string `json:"node_id"`
+		DiffHunk          string `json:"diff_hunk"`
+		Path              string `json:"path"`
+		Line              int64  `json:"line"`
+		OriginalLine      int64  `json:"original_line"`
+		StartLine         int64  `json:"start_line"`
+		OriginalStartLine int64  `json:"original_start_line"`
+		Position          int64  `json:"position"`
+		OriginalPosition  int64  `json:"original_position"`
+		CommitID          string `json:"commit_id"`
+		OriginalCommitID  string `json:"original_commit_id"`
+		User              struct {
 			Login             string `json:"login"`
 			ID                int64  `json:"id"`
 			NodeID            string `json:"node_id"`
