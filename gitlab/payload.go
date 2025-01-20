@@ -731,6 +731,7 @@ type ObjectAttributes struct {
 	LastCommit       LastCommit `json:"last_commit"`
 	Assignee         Assignee   `json:"assignee"`
 	DiscussionID     string     `json:"discussion_id"` // thread id
+	Type             string     `json:"type"`          // "DiffNote" or "DiscussionNote"
 }
 
 // PipelineObjectAttributes contains pipeline specific GitLab object attributes information
